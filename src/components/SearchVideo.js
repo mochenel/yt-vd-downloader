@@ -31,15 +31,15 @@ export default function SearchVideo() {
    
          >
 
-        <div style = {{ display: 'flex', flexWrap:"wrap", flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' } } >
+        <div style = {{ width: '80%', display: 'flex', flexWrap:"wrap", flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', margin:"50px" } } >
 
-        <TextField style = {{ width: '800px' } }
+        <TextField style = {{ width: '100%' } }
         label = "Video url"
         value = { url }
         onChange = {(e) => setUrl(e.target.value) }
         /> {loading ?
                 <CircularProgress style = {{ marginLeft: '10px' } }/> 
-                : <Button style = {{ marginLeft: '10px' } }
+                : <Button style = {{ margin: '10px' } }
                           variant = "contained"
                           onClick = { clickEvent } > Submit < /Button>
         }
