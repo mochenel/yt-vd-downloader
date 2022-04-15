@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const host = "http://localhost:9000";
+const host = "https://yt-vd-downloader-nodejs.herokuapp.com";
 async function getVideoDetails(videoURL) {
     const END_POINT = `${host}/getVideoDetails?url=${videoURL}`;
 
